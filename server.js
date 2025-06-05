@@ -12,7 +12,7 @@ app.use(express.json()); //json 본문 파싱 미들웨어
 
 // sql db연결정보
 connection = mysql.createConnection({
-  host:'localhost',
+  host:'database',
   user:'root',
   password:'1234',
   database:'kdt'
