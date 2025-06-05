@@ -33,7 +33,7 @@ app.listen(port, ()=>{
 });
 
 //회원가입시 사용자가 입력한 데이터를 가져와서 요청된 정보를 처리하여 응답을 해준다.
-app.post('/register', async (req, res) => {
+app.post('/join', async (req, res) => {
   try {
     const { username, password, tel, email } = req.body;
     const hash = await bcrypt.hash(password, 10); // 비밀번호 암호화
